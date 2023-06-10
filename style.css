@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightgray;
+  font-family: Arial, Tahoma, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+article {
+  width: 90vw;
+  margin: 10px auto;
+}
+article header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #330;
+  margin-bottom: 10px;
+}
+article header ul {
+  display: flex;
+  list-style-type: none;
+}
+article header li {
+  padding: 15px;
+}
+article section {
+  color: navy;
+  text-align: justify;
+}
+article section ol {
+  margin-left: 2em;
+}
+article section li {
+  display: flex;
+  font-style: italic;
+}
+article section li .alcim {
+  font-style: normal;
+  font-weight: bold;
+  color: black;
+}
+article section li img {
+  float: left;
+  width: 10vw;
+  margin: 20px;
+}
+article footer {
+  border-top: black solid thin;
+}
+
+/*# sourceMappingURL=style.css.map */
