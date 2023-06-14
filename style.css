@@ -10,6 +10,24 @@ body {
   line-height: 1.6;
 }
 
+a:link {
+  text-decoration: none;
+  color: navy;
+}
+
+a:visited {
+  text-decoration: none;
+  color: navy;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: none;
+}
+
 article {
   width: 90vw;
   margin: 10px auto;
@@ -20,6 +38,7 @@ article header {
   align-items: center;
   color: #330;
   margin-bottom: 10px;
+  background-color: rgb(184, 184, 184);
 }
 article header ul {
   display: flex;
@@ -27,6 +46,13 @@ article header ul {
 }
 article header li {
   padding: 15px;
+}
+article header li a:hover {
+  text-decoration: none;
+}
+article header h1 {
+  margin-left: 2vh;
+  font-size: xx-large;
 }
 article section {
   color: navy;
@@ -36,7 +62,6 @@ article section ol {
   margin-left: 2em;
 }
 article section li {
-  display: flex;
   font-style: italic;
 }
 article section li .alcim {
@@ -45,12 +70,39 @@ article section li .alcim {
   color: black;
 }
 article section li img {
-  float: left;
+  float: right;
   width: 10vw;
   margin: 20px;
+  border: 1px black solid;
+  box-shadow: 3px 2px 2px black;
+}
+article section .vegszo {
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
+  font-size: 2vh;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
 }
 article footer {
   border-top: black solid thin;
+  background-color: rgb(184, 184, 184);
+}
+article footer li {
+  list-style: none;
+  margin-left: 2vh;
+}
+
+@keyframes villogas {
+  0% {
+    background-color: lightgray;
+  }
+  50% {
+    background-color: rgb(184, 184, 184);
+  }
+  100% {
+    background-color: lightgray;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

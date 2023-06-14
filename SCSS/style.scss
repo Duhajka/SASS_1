@@ -1,53 +1,120 @@
 @import 'constant';
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: $hatterszin;
     font-family: $betutipus;
     line-height: 1.6;
 }
-article{    
+
+a:link {
+    text-decoration: none;
+    color: $szovegszin;
+}
+
+a:visited {
+    text-decoration: none;
+    color: $szovegszin;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+article {
     width: 90vw;
-    margin: 10px auto;    
-    header{
+    margin: 10px auto;
+
+    header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         color: $cimszin;
         margin-bottom: 10px;
-        ul{
+        background-color: $hatterszin2;
+        ul {
             display: flex;
             list-style-type: none;
         }
-        li{
+
+        li {
             padding: 15px;
+            a:hover{
+                text-decoration: none;
+            }
+        }
+
+        h1 {
+            margin-left: 2vh;
+            font-size: xx-large;
         }
     }
-    section{
+
+    section {
         color: $szovegszin;
         text-align: justify;
-        ol{
+
+        ol {
             margin-left: 2em;
         }
-        li{
-            display: flex;
+
+        li {
             font-style: italic;
-            .alcim{
+
+            .alcim {
                 font-style: normal;
                 font-weight: bold;
                 color: black;
             }
-            img{
-                float: left;
+
+            img {
+                float: right;
                 width: 10vw;
                 margin: 20px;
+                border: 1px black solid;
+                box-shadow: 3px 2px 2px black;
             }
         }
+
+        .vegszo {
+            margin-top: 1.5vh;
+            margin-bottom: 1.5vh;
+            font-size: 2vh;
+            font-style: normal;
+            font-weight: bold;
+            text-align: center;
+        }
     }
-    footer{
+
+    footer {
         border-top: black solid thin;
+        background-color: $hatterszin2;
+
+        li {
+            list-style: none;
+            margin-left: 2vh;
+        }
+
+    }
+    
+}
+@keyframes villogas {
+    0% {
+    background-color: $hatterszin;
+    }
+    50% {
+    background-color: $hatterszin2;
+    }
+    100% {
+    background-color: $hatterszin;
     }
 }

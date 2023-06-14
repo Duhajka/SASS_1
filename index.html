@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A telefon</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        /*function cellink() {
+            var terulet = document.getElementById("celterulet");
+            terulet.style.animation = "villogas 1s 2";
+            setTimeout(function() {
+                terulet.style.animation = "";
+            }, 4000);
+        }*/
+
+        function jelzes(terulet) {
+            terulet.style.animation = "villogas 1s 2";
+            setTimeout(function() {
+                terulet.style.animation = "";
+            }, 4000);
+        }
+    </script>
 </head>
 
 <body>
@@ -14,25 +30,28 @@
             <h1>A telefon</h1>
             <nav>
                 <ul>
-                    <li>Cél</li>
-                    <li>Története</li>
-                    <li>Információk</li>
+                    <li><a href="#cel" onclick="jelzes(document.getElementById('celterulet'));">Cél</a></li>
+                    <li><a href="#tortenet" onclick="jelzes(document.getElementById('tortenetterulet'));">Története</a></li>
+                    <li><a href="#info" onclick="jelzes(document.getElementById('infoterulet'));">Információk</a></li>
                 </ul>
             </nav>
         </header>
         <section>
-            <p>A telefon egy kommunikációs eszköz, amelyet eredetileg az emberi hang továbbítására és távolról történő
+            <div id="celterulet">
+            <p id="cel">A telefon egy kommunikációs eszköz, amelyet eredetileg az emberi hang továbbítására és távolról történő
                 kommunikációra terveztek.</p>
             <p>A telefon működéséhez földi vagy térbeli infrastruktúra szükséges: a telefonhálózat . Miután csatlakozik
                 a terminál rögzített bekapcsolása vagy a mobiltelefon, amelynek jegyzett felhasználó egy előfizetés egy
                 távközlési szolgáltató lehet, hogy egy telefonhívás, hogy a címzett is kapcsolódik tárcsázásával száma a
                 saját, amelyek kiváltó általában a csengőhang a címzett készülékén. Ha a hívott fél elfogadja a hívást, megkezdődhet a
                 telefonbeszélgetés.</p>
-            <h2>Története</h2>
+            </div>
+            <h2 id="tortenet">Története</h2>
+            <div id="tortenetterulet">
             <p>A telefon története hosszú és gazdag, és a fejlődés során számos jelentős mérföldkőt ért el. Itt van egy
                 áttekintés a telefon fejlődéséről:</p>
             <ol>
-                <li><span class="alcim">telefon feltalálása:</span> Az első működő telefon Alexander Graham Bell nevéhez köthető. Bell és Thomas
+                <li><span class="alcim">A telefon feltalálása:</span> Az első működő telefon Alexander Graham Bell nevéhez köthető. Bell és Thomas
                     Watson 1876-ban dolgozta ki az első telefon prototípusát, amely hanghullámokat alakított át elektromos
                     jelekké, és lehetővé tette a hangok távoli kommunikációját. Ez megalapozta a telefonhálózatok korszakát.
                     <img src="pic/Actor_portraying_Alexander_Graham_Bell_in_an_AT&T_promotional_film_(1926).jpg"></li>
@@ -53,7 +72,7 @@
                     alkalmazások és az érintőképernyős felhasználói felületek.</li>
                 <li><span class="alcim">Okostelefonok:</span> Az okostelefonok a 2000-es években terjedtek el széles körben. Ezek a telefonok
                     ötvözik a hagyományos telefon funkcióit a számítógépek lehetőségeivel.
-                <li><span class="alcim">Az okostelefonok fejlődése: Az okostelefonok fejlődése folyamatosan zajlik, és számos új technológia
+                <li><span class="alcim">Az okostelefonok fejlődése:</span> Az okostelefonok fejlődése folyamatosan zajlik, és számos új technológia
                     és funkció jelent meg az elmúlt évek során. Az okostelefonok ma már szinte elengedhetetlen eszközök
                     lettek az életünkben. Az újabb modellek erőteljes processzorokkal, nagy felbontású kijelzőkkel és nagyobb
                     tárolókapacitással rendelkeznek.</li>
@@ -72,16 +91,19 @@
                     képezik az Internet of Things (IoT) ökoszisztémának, és lehetővé teszik az eszközök közötti kapcsolatot és
                     kommunikációt.</li>
             </ol>
-            Az okostelefonok és a mobiltechnológia továbbra is dinamikusan fejlődik, és új innovációk és fejlesztések
-            várhatóak a jövőben.
+            </div>
+            <p class="vegszo">Az okostelefonok és a mobiltechnológia továbbra is dinamikusan fejlődik, és új innovációk és fejlesztések
+            várhatóak a jövőben.</p>
         </section>
         <footer>
             További források:
-            <ul>
+            <div id="infoterulet">
+            <ul id="info">
                 <li><a href="https://hu.frwiki.wiki/wiki/T%C3%A9l%C3%A9phone" target="_blank">Wiki</a></li>
                 <li><a href="https://hu.wikipedia.org/wiki/Telefonk%C3%A9sz%C3%BCl%C3%A9k" target="_blank">Készülékek</a></li>
                 <li><a href="https://www.ksh.hu/stadat_files/ikt/hu/ikt0027.html" target="_blank">KSH adatok</a></li>
             </ul>
+            </div>
         </footer>
     </article>
 </body>
